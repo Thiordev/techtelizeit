@@ -1,5 +1,6 @@
 <?php
-require_once("includ\header.php");
+include("includ\header.php");
+include 'includ/limite.php';
 if(isset($_POST["submit"])){
     $id=$_POST["id"];
     $fname=$_POST["fname"];

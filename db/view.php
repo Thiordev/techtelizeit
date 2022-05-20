@@ -1,4 +1,5 @@
 <?php
+include("../includ/session.php");
  
 require_once("connexion.php");
 
@@ -17,4 +18,3 @@ else {
 <?php echo "PRENON: ". $result["prenom"]."<br>"; ?>
 <?php echo "NON: ". $result["Nom"]."<br>"; ?>
 <?php echo "Adresse mail: ". $result["email"]."<br>"; ?>
-<a href="essaie.php">essaie</a>

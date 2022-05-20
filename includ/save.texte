@@ -1,0 +1,28 @@
+<?php
+ include("../includ/header.php");
+
+
+?>
+<form action="<?php echo htmlentities($_SERVER['PHP_SELF'] )?>"method="post"> <br>
+
+<table>
+<tr>
+<label for="username">user name</label>
+<input type="email" name ="email" value= "<?php if($_SERVER['REQUEST_METHOD']=='POST') echo $_POST['username'];?>"> <br>
+
+<label for="username">Password</label>
+<input type="Passxord" name ="passw" id="passw"> <br>
+
+<input type="submit" value="Se connecter"><br><br>
+<a href="">forgot password</a>
+
+</table>
+
+
+
+
+
+</tr>
+
+<td></td>
+</form>

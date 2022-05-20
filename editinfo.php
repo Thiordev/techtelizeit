@@ -1,5 +1,7 @@
 <?php 
-require_once("db\connexion.php");
+include('includ/header.php');
+include("db\connexion.php");
+include 'includ/limite.php';
 if(isset($_POST["submit"])){
     $id=$_POST["id"];
     $fname=$_POST["fname"];

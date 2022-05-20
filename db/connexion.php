@@ -15,5 +15,8 @@ echo "<br>";
 }
 
 require_once("crud.php");
+require_once("user.php");
 $crud = new crud($pdo);
+$userthior = new userthior($pdo);
+$userthior->insertuser("cheikhouidy@gmail.com","password");
 ?>

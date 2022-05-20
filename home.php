@@ -1,11 +1,14 @@
 
 <?php
+
 require_once("includ/header.php");
 ?>
     <title>Hello, world!</title>
+   
   </head>
   <body>
   <body>
+      <center>
     <form action="information.php" method="POST">
     <label for="id">Id number</label> <br>
 <input required type="number" name="id" id="id"> <br>
@@ -22,4 +25,5 @@ require_once("includ/header.php");
 
 
     </form>
-    
+    <a href="etudiants.php"><p style="color: green;s">Clicker ici pour voir la liste des participants</p></a>
+    </center>

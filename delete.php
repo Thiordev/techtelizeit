@@ -1,5 +1,7 @@
 <?php 
- require_once("db\connexion.php");
+include("includ/deader.php");
+ include("db\connexion.php");
+ include 'includ/limite.php';
 if(!$_GET['id']){
     echo "error";
 }

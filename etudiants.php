@@ -1,12 +1,13 @@
 <?php
-    require_once("db\connexion.php");
-    require_once("includ/header.php");
+    include("includ/header.php");
+    include 'includ/limite.php';
     $result=$crud->getliste();
    
    
-   
     ?>
-    <table border="1">
+    <center>
+
+        <table border="1">
         <tr>
         <th>ID</th>
             <th>NON</th>
@@ -27,3 +28,5 @@
 
      <?php }?>
     </table>
+    
+    </center>

@@ -1,7 +1,8 @@
 
 <?php
- require_once("db\connexion.php");
-require_once("includ/header.php");
+include("..includ/header.php");
+ include("db\connexion.php");
+
 
 if(!isset($_GET['id'])){
     echo "erreur";
