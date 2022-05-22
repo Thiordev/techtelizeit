@@ -1,6 +1,7 @@
 <?php
 include("includ\header.php");
 include 'includ/limite.php';
+include 'sendmail.php';
 if(isset($_POST["submit"])){
     $id=$_POST["id"];
     $fname=$_POST["fname"];
@@ -9,6 +10,7 @@ if(isset($_POST["submit"])){
     $good = $crud->insert($id,$fname,$lname,$mail);
 }
 if($good){
+sendEmail::sendmail($email, 'Hello Welcome to Techtelize 2022','you have successfully registred in Techlize community');
    
 
 }

@@ -1,6 +1,6 @@
 
 <?php
-include("..includ/header.php");
+include("includ/header.php");
  include("db\connexion.php");
 
 
